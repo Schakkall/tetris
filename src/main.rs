@@ -1,5 +1,7 @@
 extern crate sdl2;
 
+use utils;
+
 use sdl2::pixels::Color;
 use sdl2::event::Event;
 use sdl2::keyboard::Keycode;
@@ -62,7 +64,7 @@ pub fn main() {
     //});
     
 
-    println!("Hello, Out of the window!");
+    println!("Hello, Out of the window! {}", utils::sum(1,1));
     
     //thread::sleep(Duration::from_millis(10000));
 }

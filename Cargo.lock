@@ -152,7 +152,12 @@ name = "tetris"
 version = "0.1.0"
 dependencies = [
  "sdl2",
+ "utils",
 ]
+
+[[package]]
+name = "utils"
+version = "0.1.0"
 
 [[package]]
 name = "winapi"
