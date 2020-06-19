@@ -4,8 +4,15 @@ use sdl2::pixels::Color;
 use sdl2::event::Event;
 use sdl2::keyboard::Keycode;
 use sdl2::rect::Rect;
+//use sdl2::render::Canvas;
 use std::time::Duration;
 use std::thread;
+
+
+// TODO: Design a Model-View-Controller pattern for the Application
+// TODO: Understand the interfaces of image managing
+// TODO: Obtain a list of the events that can be handled
+// TODO: Test the multiplataform possibilities
 
 
 pub fn main() {
@@ -21,8 +28,13 @@ pub fn main() {
         
         let mut event_pump = sdl_context.event_pump().expect("Failed to get SDL event pump!");
 
-        let mut canvas = window.into_canvas().build().expect("Failed to convert window into canvas.");
-                                    
+        let mut canvas = window.into_canvas().present_vsync().build().expect("Failed to convert window into canvas.");
+
+        
+        canvas.set_draw_color(Color::RGB(255, 255, 255));        
+        canvas.clear();                  
+        canvas.present();
+
        
         'running: loop {
             for event in event_pump.poll_iter() {
@@ -41,9 +53,6 @@ pub fn main() {
                         canvas.present();                        
                     },
                     _ => {
-                        canvas.set_draw_color(Color::RGB(0, 0, 0));
-                        canvas.clear();                  
-                        canvas.present();                                       
                     }
                 }
             }            
@@ -54,7 +63,6 @@ pub fn main() {
     
 
     println!("Hello, Out of the window!");
-
     
-    //thread::sleep(Duration::from_millis(10000000));
+    //thread::sleep(Duration::from_millis(10000));
 }
