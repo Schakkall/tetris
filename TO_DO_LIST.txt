@@ -11,4 +11,9 @@
 // TODO: Expose only the desired functions
 
 
+// General Application
+
+// TODO: Review OS permissions for building and execution
+
+
 
