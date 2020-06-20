@@ -1,0 +1,14 @@
+// main.rs
+
+// TODO: Design a Model-View-Controller pattern for the Application
+// TODO: Understand the interfaces of image managing
+// TODO: Obtain a list of the events that can be handled
+// TODO: Test the multiplataform possibilities
+// TODO: Review Tetris/Cargo.lock
+
+// view/src/lib.rs
+
+// TODO: Expose only the desired functions
+
+
+
