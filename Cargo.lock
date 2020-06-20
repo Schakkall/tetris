@@ -153,10 +153,15 @@ version = "0.1.0"
 dependencies = [
  "sdl2",
  "utils",
+ "view",
 ]
 
 [[package]]
 name = "utils"
+version = "0.1.0"
+
+[[package]]
+name = "view"
 version = "0.1.0"
 
 [[package]]

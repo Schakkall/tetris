@@ -1,6 +1,7 @@
 extern crate sdl2;
 
 use utils;
+use view::screen::diff;
 
 use sdl2::pixels::Color;
 use sdl2::event::Event;
@@ -64,7 +65,7 @@ pub fn main() {
     //});
     
 
-    println!("Hello, Out of the window! {}", utils::sum(1,1));
+    println!("Hello, Out of the window! {}", diff(1,1));
     
     //thread::sleep(Duration::from_millis(10000));
 }

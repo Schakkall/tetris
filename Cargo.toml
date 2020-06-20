@@ -9,10 +9,12 @@ edition = "2018"
 [workspace]
 
 members = [
-    "./src/utils"
+    "./src/utils",
+    "./src/view"
 ]
 
 
 [dependencies]
 sdl2 = "0.31.0"
 utils = { path = "./src/utils" }
+view = { path = "./src/view" }
