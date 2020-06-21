@@ -6,8 +6,8 @@ use std::time::Duration;
 
 pub fn main() {
     
-    show(800, 600);    
-    show(1024, 720);    
+    show(736, 360);//Smartphone    
+    show(720, 1024);//Wide screen    
 
     std::thread::spawn( || {
         thread::sleep(Duration::from_millis(6000));      

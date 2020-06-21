@@ -10,7 +10,7 @@ pub fn show(height:u32, width:u32) -> u32 {
     let sdl_context = sdl2::init().expect("SDL initialization failed!");
     let video_subsystem = sdl_context.video().expect("Couldn't get SDL video subsystem.");
 
-    let window = video_subsystem.window("Tetris", height, width)
+    let window = video_subsystem.window("Tetris", width, height)
                 .position_centered()
                 .opengl()
                 .build()
