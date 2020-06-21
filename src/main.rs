@@ -5,11 +5,11 @@ use std::thread;
 
 pub fn main() {
     
-    //std::thread::spawn(move || {
-        show(800, 600);    
-        show(1024, 720);    
-    //});
+    show(800, 600);    
+    show(1024, 720);    
 
-    println!("Hello, Out of the window! {}", utils::sum(0,1));
+    std::thread::spawn( || {
+        println!("Hello, Out of the window! {}", utils::sum(0,1));
+    });
     
 }
