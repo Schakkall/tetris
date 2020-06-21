@@ -2,6 +2,7 @@ use utils;
 use view::screen::show;
 
 use std::thread;
+use std::time::Duration;
 
 pub fn main() {
     
@@ -9,7 +10,8 @@ pub fn main() {
     show(1024, 720);    
 
     std::thread::spawn( || {
-        println!("Hello, Out of the window! {}", utils::sum(0,1));
+        thread::sleep(Duration::from_millis(6000));      
+        println!("Hello, Out of the window! {}", utils::sum(0,1));        
     });
     
 }
