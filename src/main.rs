@@ -9,9 +9,9 @@ pub fn main() {
     show(736, 360);//Smartphone    
     show(720, 1024);//Wide screen    
 
-    std::thread::spawn( || {
-        thread::sleep(Duration::from_millis(6000));      
+    std::thread::spawn( || {     
         println!("Hello, Out of the window! {}", utils::sum(0,1));        
+        thread::sleep(Duration::from_millis(6000));      
     });
     
 }
