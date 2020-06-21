@@ -2,7 +2,7 @@
 
 // TODO: Design a Model-View-Controller pattern for the Application
 // TODO: Understand the interfaces of image managing
-// TODO: Obtain a list of the events that can be handled
+// TODO: Obtain a list of the events that can be handled //Find the events: onWindowCreate and onWindowShow
 // TODO: Test the multiplataform possibilities
 
 // view/src/lib.rs

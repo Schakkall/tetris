@@ -21,11 +21,6 @@ pub fn show(height:u32, width:u32) -> u32 {
     let mut canvas = window.into_canvas().present_vsync().build().expect("Failed to convert window into canvas.");
 
     
-    canvas.set_draw_color(Color::RGB(255, 255, 255));        
-    canvas.clear();                  
-    canvas.present();
-
-   
     'running: loop {
         for event in event_pump.poll_iter() {
             match event {
