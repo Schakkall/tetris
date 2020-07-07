@@ -17,6 +17,5 @@ pub fn main() {
     
         println!("Hello, Out of the window! {} ->a<-sserting", utils::sum(0,1));        
         thread::sleep(Duration::from_millis(6000));      
-    });
-    
+    });      
 }
