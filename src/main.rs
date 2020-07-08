@@ -1,10 +1,10 @@
 //use utils::functions::sum;
-//use view::screen::show;
+use view::screen::show;
 
 use std::thread;
 use std::time::Duration;
 
-use std::result::Result;
+//use std::result::Result;
 
 pub fn main() {
     
