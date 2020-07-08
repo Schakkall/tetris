@@ -1,1 +1,1 @@
-// Create test cases for the functions in this private module
+// Create test' cases for the functions in this private module
