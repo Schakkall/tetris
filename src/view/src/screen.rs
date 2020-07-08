@@ -33,8 +33,8 @@ pub fn show(height:u32, width:u32) -> u32 {
                 },
                 Event::KeyDown {keycode: Some(Keycode::Return), ..} =>
                 {                        
-                    canvas.set_draw_color(Color::RGB(255, 255, 255));
-                    canvas.clear();                  
+                    canvas.clear(); 
+                    canvas.set_draw_color(Color::RGB(255, 255, 255));                                    
                     canvas.present();                        
                 },
                 _ => {
